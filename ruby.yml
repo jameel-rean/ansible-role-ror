@@ -1,0 +1,7 @@
+---
+- name: Install Rbenv & Ruby
+  hosts: all
+  sudo: yes
+
+  roles:
+    - { role: ruby,    sudo_user: ubuntu }

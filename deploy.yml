@@ -1,0 +1,9 @@
+---
+- name:  Deploy WebApp
+  hosts: all
+  sudo:  yes
+
+  roles:
+    - { role: webapp,  sudo_user: ubuntu }
+    - { role: unicorn, sudo_user: ubuntu }
+    - nginx
